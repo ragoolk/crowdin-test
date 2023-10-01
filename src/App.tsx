@@ -25,13 +25,13 @@ function App() {
   return (
     <div className='layout'>
       <div className='header'>
-        <h4>
+        <h2>
           {I18n.getText(
             "heading",
             selectedOption?.value as I18n.LanguageCode,
             "Crowdin Testing"
           )}
-        </h4>
+        </h2>
         <Select
           defaultValue={selectedOption}
           onChange={setSelectedOption}
