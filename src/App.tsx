@@ -9,7 +9,10 @@ type Option = {
 };
 
 function App() {
-  const [selectedOption, setSelectedOption] = useState<Option | null>(null);
+  const [selectedOption, setSelectedOption] = useState<Option | null>({
+    value: "en",
+    label: "English",
+  });
 
   const customStyle = {
     option: (base: any) => ({
@@ -25,7 +28,7 @@ function App() {
         <h4>
           {I18n.getText(
             "heading",
-            (selectedOption?.value as I18n.LanguageCode) || "en",
+            selectedOption?.value as I18n.LanguageCode,
             "Crowdin Testing"
           )}
         </h4>
@@ -41,14 +44,14 @@ function App() {
           {" "}
           {I18n.getText(
             "question1",
-            (selectedOption?.value as I18n.LanguageCode) || "en",
+            selectedOption?.value as I18n.LanguageCode,
             "Question ?"
           )}{" "}
         </h1>
         <p>
           {I18n.getText(
             "answer1",
-            (selectedOption?.value as I18n.LanguageCode) || "en",
+            selectedOption?.value as I18n.LanguageCode,
             "answer"
           )}
         </p>
@@ -57,14 +60,14 @@ function App() {
           {" "}
           {I18n.getText(
             "question2",
-            (selectedOption?.value as I18n.LanguageCode) || "en",
+            selectedOption?.value as I18n.LanguageCode,
             "Question ?"
           )}{" "}
         </h1>
         <p>
           {I18n.getText(
             "answer2",
-            (selectedOption?.value as I18n.LanguageCode) || "en",
+            selectedOption?.value as I18n.LanguageCode,
             "answer"
           )}
         </p>

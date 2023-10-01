@@ -1,8 +1,12 @@
 import en from "./translations/en";
+import fr from "./translations/fr";
+import it from "./translations/it";
 
 export namespace I18n {
   export const DICTIONARIES = Object.freeze({
     en,
+    fr,
+    it,
   });
 
   export type Dictionary = (typeof DICTIONARIES)["en"];
