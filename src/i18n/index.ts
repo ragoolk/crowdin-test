@@ -1,4 +1,5 @@
 import en from "./translations/en";
+import es from "./translations/es";
 import fr from "./translations/fr";
 import it from "./translations/it";
 
@@ -7,6 +8,7 @@ export namespace I18n {
     en,
     fr,
     it,
+    es,
   });
 
   export type Dictionary = (typeof DICTIONARIES)["en"];
