@@ -23,6 +23,7 @@ export namespace I18n {
     { value: "en", label: "English" },
     { value: "fr", label: "French" },
     { value: "it", label: "Italian" },
+    { value: "es", label: "Spanish" },
   ];
 
   export const getText = (
